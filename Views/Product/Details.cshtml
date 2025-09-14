@@ -1,0 +1,21 @@
+﻿@model Product
+
+<div class="d-flex justify-content-center">
+    <h1 class="text-success">Product Details</h1>
+</div>
+
+<br />
+<hr />
+<br />
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Product Id: @Model.Id</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Product Category: @Model.Category.Name</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Product Price: @Model.Price</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Product Quantity: @Model.Quantity</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Product Description: @Model.Description</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Product Image: @Model.ImagePath</h6>
+        <a href="~/Product/Index" class="btn btn-primary">Back</a>
+    </div>
+</div>

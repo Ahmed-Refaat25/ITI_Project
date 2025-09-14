@@ -1,0 +1,70 @@
+﻿@model User
+
+
+<div class="d-flex justify-content-center">
+    <h1 class="text-success">Registration Form</h1>
+</div>
+
+<br />
+<hr />
+<br />
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-action="Create">
+    <div class="form-group mt-5">
+
+        <br />
+        <hr />
+        <br />
+
+        <label asp-for="Fname" class="form-label"></label>
+        <input asp-for="Fname" class="form-control" />
+        <span asp-validation-for="Fname" class="text-danger"></span>
+
+        <br />
+        <hr />
+        <br />
+        <label asp-for="Lname" class="form-label"></label>
+        <input asp-for="Lname" class="form-control" />
+        <span asp-validation-for="Lname" class="text-danger"></span>
+
+        <br />
+        <hr />
+        <br />
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+
+        <br />
+        <hr />
+        <br />
+        <label asp-for="Password" class="form-label"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+
+        <br />
+        <hr />
+        <br />
+        <label asp-for="Confirmpassword" class="form-label"></label>
+        <input asp-for="Confirmpassword" class="form-control" />
+        <span asp-validation-for="Confirmpassword" class="text-danger"></span>
+
+        
+
+
+    </div>
+
+    <div class="d-flex justify-content-center gap-3 mt-5">
+        <input type="submit" value="Add" class="btn btn-success"/>
+        <a asp-controller="User" asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+
+
+
+</form>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+}

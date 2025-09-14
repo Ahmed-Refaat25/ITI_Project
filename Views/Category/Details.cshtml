@@ -1,0 +1,17 @@
+﻿@model Category
+
+<div class="d-flex justify-content-center">
+    <h1 class="text-success">Category Details</h1>
+</div>
+
+<br />
+<hr />
+<br />
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Category Id: @Model.Id</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Category Description: @Model.Description</h6>
+        <a href="~/Category/Index" class="btn btn-primary">Back</a>
+    </div>
+</div>
